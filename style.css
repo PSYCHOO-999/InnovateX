@@ -840,13 +840,14 @@ th:last-child {
   overflow: hidden;
 }
 
-.form-container span {
-  font-weight: bold;
-  padding: 0 10px;
-  color: #555;
-  cursor: pointer;
-  width: 100px;
-  display: inline-block;
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
 }
 
 .form-btn {
@@ -868,6 +869,9 @@ form input {
   padding: 0 10px;
   border: 1px solid #ccc;
 }
+#LoginForm input{
+    border-radius: 5px;
+}
 
 form .btn {
   width: 100%;
@@ -888,8 +892,8 @@ form .btn:focus {
   left: 0;
 }
 
-form a {
-  font-size: 12px;
+form a{
+    font-size: 12px;
 }
 
 #Indicator {
