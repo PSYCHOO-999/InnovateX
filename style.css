@@ -908,7 +908,9 @@ form .btn:focus{
 #RegForm{
     left: 0;
 }
-
+#RegForm input{
+    border-radius: 5px;
+}
 form a{
     font-size: 12px;
 }
