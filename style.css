@@ -840,6 +840,30 @@ th:last-child {
   overflow: hidden;
 }
 
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+#MenuItems a::after {
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 0%;
+    left: 50%;
+    width: 0%;
+    height: 2.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+#MenuItems a:hover::after {
+    width: 100%;
+    left: 0;
+}
 
 .form-container span{
     font-weight: bold;
@@ -892,6 +916,12 @@ form .btn:focus {
   left: 0;
 }
 
+form a {
+  font-size: 12px;
+}
+#RegForm input{
+    border-radius: 5px;
+}
 form a{
     font-size: 12px;
 }
@@ -1206,7 +1236,12 @@ hr {
   margin-bottom: -6px;
 }
 
+
 .alt-send-button {
   padding: 4px 4px;
   margin-left: -20px;
+}
+.alt-send-button{
+    padding: 4px 4px;
+    margin-left: -20px;
 }
