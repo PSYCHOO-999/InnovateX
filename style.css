@@ -841,7 +841,22 @@ th:last-child{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     overflow: hidden;
 }
-
+#MenuItems a::after {
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 0%;
+    left: 50%;
+    width: 0%;
+    height: 2.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+#MenuItems a:hover::after {
+    width: 100%;
+    left: 0;
+}
 
 .form-container span{
     font-weight: bold;
@@ -870,6 +885,9 @@ form input{
     margin: 10px 0;
     padding: 0 10px;
     border: 1px solid #ccc;
+}
+#LoginForm input{
+    border-radius: 5px;
 }
 
 form .btn{
